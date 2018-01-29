@@ -1,0 +1,59 @@
+body {background-size: cover; margin: 0; padding: 0; background-repeat: no-repeat;}
+
+.logo {transform: rotate(90deg);position: absolute;top:200px;left: -220px;}
+
+h1{font-family: Avenir Next; font-weight: 50; color: #ffffff; font-size: 40px; 
+	position: absolute; top: 88px; left: 370px;}
+
+h2{font-family: Avenir Next Condensed; color: #ffffff; font-size: 185px; 
+	font-weight: normal; position: absolute; top: 25px; left: 356px; line-height: 180px;}
+
+.photo1 {top: 890px; left: 0px; position: absolute;}
+
+h4 {font-family: Avenir Next; font-weight: 40; color: #ffffff; font-size: 80px; 
+	position: absolute; top: 2000px; left: 320px;}
+
+p {font-family: Avenir Next; font-size: 25px; color: #ffffff; position: absolute;}
+
+.firstP {top: 2360px; left: 320px;}
+
+.secondP {top: 2470px; left: 320px;}
+
+.thirdP {top: 2615px; left: 320px;}
+
+.fourthP {top: 2690px; left: 320px;}
+
+.firstP a {text-decoration: none; color: #ffffff;}
+
+.firstP a:hover {text-decoration: none; transition: 1s; color: yellow;}
+
+.fifthP {font-family: Avenir Next; font-size: 25px; line-height: 30px; 
+	color: #ffffff; position: absolute; top: 2920px; left: 320px; }
+
+.sixthP {font-family: Avenir Next; font-size: 25px; line-height: 30px; 
+	color: #ffffff; position: absolute; top: 3200px; left: 320px;}
+
+h5 {font-family: Avenir Next Condensed; font-weight: normal; font-size: 75px; 
+	position: absolute;top: 3500px; left: 320px; color:#ffffff;}
+
+@keyframes slider {
+
+	0%{ left:0; }
+	20% {left: 0;}
+	25% {left:-100%;}
+	45% {left:-100%;}
+	50% {left:-200%;}
+	70% {left:-200%;}
+	75% {left:-300%;}
+	95% {left:-300%;}
+	100% {left:-300%;}
+
+
+}
+
+#slider {overflow: hidden;}
+
+#slider figure img {width: 5%; height: 6%; float: left;}
+
+#slider figure {position: absolute; top: 3800px; width: 900%; margin:0; left:0; animation: 20s slider infinite;}
+
