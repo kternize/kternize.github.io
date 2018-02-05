@@ -1,13 +1,14 @@
 body{background-size: cover; width: 100%; height: 100%}
 
 h1 {font-family:Avenir Next; font-weight: bold; color:#ffffff; font-size: 4.5vw; position: absolute; 
-	top: 90vmin; margin: 0 auto; text-shadow: 1px 1px #000000; left: 20px; padding: 30px;}
+	top: 100vmin; margin: 0 auto; text-shadow: 1px 1px #000000; left: 20px; padding: 30px;}
 
 h2{font-family: Avenir Next Condensed; font-weight: normal; color: #ffffff;font-size: 23vw; 
-	position: absolute; top: 110vmin; left: 8px; margin: 0 auto; text-shadow: 1px 1px #000000; padding:10px;}
+	position: absolute; top: 110vmin; left: 8px; margin: 0 auto; text-shadow: 1px 1px #000000; 
+	padding:10px; text-align: center;}
 
-h3{font-family: Avenir Next; font-weight: bold; color: #ffffff; font-size: 4vw; 
-position: absolute; top: 150vmin; left: 45vw; text-shadow: 1px 1px #000000;}
+h3{font-family: Avenir Next; font-weight: bold; color: #ffffff; font-size: 6vw; 
+position: absolute; top: 180vmin; left: 10vw; text-shadow: 1px 1px #000000; text-align: center;}
 
 p {font-family: Avenir Next; font-size: 55px; color: #ffffff; position: absolute; padding: 30px;}
 
@@ -17,12 +18,12 @@ p {font-family: Avenir Next; font-size: 55px; color: #ffffff; position: absolute
 
 .thirdP {top: 243vmin; left: 3vw; text-shadow: 1px 1px #000000;}
 
-h4{font-family: Avenir Next Condensed; font-weight: normal; font-size: 14vw; 
-position: absolute; top: 260vmin; left: 30px; color:#ffffff;} 
+h4{font-family: Avenir Next Condensed; font-weight: normal; font-size: 16vw; 
+position: absolute; top: 260vmin; left: 100px; color:#ffffff; text-align: center;} 
 
 .fourthP{font-family: Avenir Next; font-size: 35px; line-height: 45px; 
 color: #ffffff; position: absolute; top: 350vmin; left: 15px;}
 
 .fifthP {font-family: Avenir Next; font-size: 35px; line-height: 45px; 
-color: #ffffff; position: absolute; top: 410vmin; left: 15px;}
+color: #ffffff; position: absolute; top: 425vmin; left: 15px;}
 
