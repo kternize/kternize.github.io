@@ -1,9 +1,10 @@
 body{background-size: cover; width: 100%; height: 100%}
 
-h1 {font-family:Avenir Next; font-weight: 50; color:#ffffff; font-size: 5vw; position: absolute; 
+h1 {font-family:Avenir Next; font-weight: bold; color:#ffffff; font-size: 4.5vw; position: absolute; 
 	top: 90vmin; margin: 0 auto; text-shadow: 1px 1px #000000;}
 
 h2{font-family: Avenir Next Condensed; font-weight: normal; color: #ffffff;font-size: 23vw; 
-	position: absolute; top: 100vmin; margin: 0 auto; text-shadow: 1px 1px #000000; line-height: 100px;}
-h3{font-family: Avenir Next; font-weight: 40; color: #ffffff; font-size: 4vw; 
-position: absolute; top: 130vmin; left: 45vw; text-shadow: 1px 1px #000000;}
+	position: absolute; top: 110vmin; margin: 0 auto; text-shadow: 1px 1px #000000;}
+
+h3{font-family: Avenir Next; font-weight: bold; color: #ffffff; font-size: 4vw; 
+position: absolute; top: 120vmin; left: 45vw; text-shadow: 1px 1px #000000;}
