@@ -1,40 +1,50 @@
-body {background-size: cover; margin: 0; padding: 0; background-repeat: no-repeat;}
+body {background-image: url("bkg.png");background-size: cover; background-repeat: no-repeat;}
+
+.background-container {width:100vw; height: 100vh;z-index:-1; top:0; left:0; position: relative; margin: 0; padding: 0; }
+
+/*body {background-size: cover;}*/
 
 .logo {transform: rotate(90deg);position: absolute;top:200px;left: -220px;}
 
-h1{font-family: Avenir Next; font-weight: 50; color: #ffffff; font-size: 40px; 
-	position: absolute; top: 88px; left: 370px;}
+h1{font-family: Avenir Next; font-weight: 50; color: #ffffff; font-size: 39.5px; 
+	position: absolute; top: 88px; left: 370px; text-shadow: 1px 1px #000000;}
 
 h2{font-family: Avenir Next Condensed; color: #ffffff; font-size: 185px; 
-	font-weight: normal; position: absolute; top: 25px; left: 356px; line-height: 180px;}
+	font-weight: normal; position: absolute; top: 25px; left: 356px; line-height: 180px; text-shadow: 1px 1px #000000;}
 
-.photo1 {top: 890px; left: 0px; position: absolute;}
 
-h4 {font-family: Avenir Next; font-weight: 40; color: #ffffff; font-size: 80px; 
-	position: absolute; top: 2000px; left: 320px;}
+h3 {font-family: Avenir Next; font-weight: 50; color: #ffffff; font-size: 48px; 
+	position: absolute; top: 517px; left: 365px;text-shadow: 1px 1px #000000;}
 
-p {font-family: Avenir Next; font-size: 25px; color: #ffffff; position: absolute;}
+.box1 {width:740px; height:4px; background-color: #ffffff; top: 545px; left: 365px; position: absolute;}
 
-.firstP {top: 2360px; left: 320px;}
+p {font-family: Avenir Next; font-size: 35px; color: #ffffff; position: absolute;}
 
-.secondP {top: 2470px; left: 320px;}
+.firstP {top: 720px; left: 365px;text-shadow: 1px 1px #000000;}
 
-.thirdP {top: 2615px; left: 320px;}
+.secondP {top: 777px; left: 365px;text-shadow: 1px 1px #000000;}
 
-.fourthP {top: 2690px; left: 320px;}
+.thirdP {top: 935px; left: 365px;text-shadow: 1px 1px #000000;}
 
-.firstP a {text-decoration: none; color: #ffffff;}
+/*.fourthP {top: 920px; left: 566px;}*/
 
-.firstP a:hover {text-decoration: none; transition: 1s; color: yellow;}
+/*.firstP a {text-decoration: none; color: #ffffff;}*/
+
+/*.firstP a:hover {text-decoration: none; transition: 1s; color: yellow;}*/
 
 .fifthP {font-family: Avenir Next; font-size: 25px; line-height: 30px; 
-	color: #ffffff; position: absolute; top: 2920px; left: 320px; }
+	color: #ffffff; position: absolute; top: 1920px; left: 320px; }
 
 .sixthP {font-family: Avenir Next; font-size: 25px; line-height: 30px; 
-	color: #ffffff; position: absolute; top: 3200px; left: 320px;}
+	color: #ffffff; position: absolute; top: 2200px; left: 320px;}
 
-h5 {font-family: Avenir Next Condensed; font-weight: normal; font-size: 75px; 
-	position: absolute;top: 3500px; left: 320px; color:#ffffff;}
+.seventhP {display:none;}
+
+.eightP {display:none;}
+
+
+h4 {font-family: Avenir Next Condensed; font-weight: normal; font-size: 75px; 
+	position: absolute;top: 2540px; left: 320px; color:#ffffff;}
 
 @keyframes slider {
 
@@ -53,7 +63,66 @@ h5 {font-family: Avenir Next Condensed; font-weight: normal; font-size: 75px;
 
 #slider {overflow: hidden;}
 
+body {overflow-x: hidden;}
+
 #slider figure img {width: 5%; height: 6%; float: left;}
 
-#slider figure {position: absolute; top: 3800px; width: 900%; margin:0; left:0; animation: 20s slider infinite;}
+#slider figure {position: absolute; top: 2800px; width: 900%; margin:0; left:0; animation: 20s slider infinite;}
+
+/*.video {position: absolute; top:1150px; left: 130px; width: 1024px; height: 600px;}*/
+
+/*.photo10 {position: absolute; top: 1430px; left: 130px;}*/
+
+/*.quote {font-family: Avenir Next Condensed; font-size: 30px; top: 1970px; left:150px; position: absolute; color: #ffffff;}*/
+
+
+
+
+
+@media(max-width: 550px) {  /* Any window smaller than this px width gets the following CSS rules */
+  /* Rules go here */
+
+ #slider {display: none;}
+
+ .logo {display: none;}
+
+ .box1 {display: none;}
+ 
+
+body{background-size: cover; width: 100%; height: 100%; background-image: url("mobile_background3.png");}
+
+h1 {font-family:Avenir Next; font-weight: bold; color:#ffffff; font-size: 3.8vw; position: absolute; 
+	top: 100vmin; margin: 0 auto; text-shadow: 1px 1px #000000; left: 20px; padding: 30px;}
+
+h2{font-family: Avenir Next Condensed; font-weight: normal; color: #ffffff;font-size: 23vw; 
+	position: absolute; top: 120vmin; left: -30px; margin: 0 auto; text-shadow: 1px 1px #000000; 
+	padding:30px; text-align: center; line-height: 100px;}
+
+h3{font-family: Avenir Next; font-weight: bold; color: #ffffff; font-size: 6vw; 
+position: absolute; top: 180vmin; left: 10vw; text-shadow: 1px 1px #000000; text-align: center;}
+
+p {font-family: Avenir Next; font-size: 25px; color: #ffffff; position: absolute; padding: 30px;}
+
+.firstP {top: 200vmin; left: 3vw; text-shadow: 1px 1px #000000;}
+
+.secondP {top: 222vmin; left: 3vw; text-shadow: 1px 1px #000000;}
+
+.thirdP {top: 270vmin; left: 3vw; text-shadow: 1px 1px #000000;}
+
+h4{font-family: Avenir Next Condensed; font-weight: normal; font-size: 18vw; 
+position: absolute; top: 300vmin; left: 0px; color:#ffffff; text-align: center;} 
+
+.fifthP {display:none;}
+
+.sixthP{display:none;}
+
+.seventhP{ display: block; font-family: Avenir Next; font-size: 15px; line-height: 17px; 
+color: #ffffff; position: absolute; top: 394vmin; left: 15px;}
+
+.eightP {display:block; font-family: Avenir Next; font-size: 15px; line-height: 17px; 
+color: #ffffff; position: absolute; top: 445vmin; left: 15px;}
+
+
+}
+
 
