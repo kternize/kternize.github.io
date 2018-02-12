@@ -34,6 +34,7 @@ p {font-family: Avenir Next; font-size: 35px; color: #ffffff; position: absolute
 
 .eightP {display:none;}
 
+.ninthP {display:none;}
 
 h4 {font-family: Avenir Next Condensed; font-weight: normal; font-size: 75px; 
 	position: absolute;top: 2040px; left: 320px; color:#ffffff;}
@@ -61,7 +62,7 @@ body {overflow-x: hidden;}
 
 #slider figure {position: absolute; top: 2400px; width: 900%; margin:0; left:0; animation: 20s slider infinite;}
 
-.video {position: absolute; top:1170px; left: 420px; animation-delay: 3s;}
+.video {position: absolute; top:1170px; left: 420px;}
 
 @media(max-width: 550px) {  /* Any window smaller than this px width gets the following CSS rules */
   /* Rules go here */
@@ -89,7 +90,7 @@ p {font-family: Avenir Next; font-size: 23px; color: #ffffff; position: absolute
 
 .firstP {top: 200vmin; left: 3vw; text-shadow: 1px 1px #000000;}
 
-.secondP {top: 222vmin; left: 3vw; text-shadow: 1px 1px #000000;}
+.secondP {display:none;}
 
 .thirdP {top: 270vmin; left: 3vw; text-shadow: 1px 1px #000000;}
 
@@ -106,7 +107,9 @@ color: #ffffff; position: absolute; top: 425vmin; left: 15px;}
 .eightP {display:block; font-family: Avenir Next; font-size: 15px; line-height: 17px; 
 color: #ffffff; position: absolute; top: 480vmin; left: 15px;}
 
-.video {position: absolute; top:1420px; left: 0px; animation-delay: 3s; width:400px; height:350px;}
+.ninthP {display: block; top: 226vmin; left: 3vw; text-shadow: 1px 1px #000000;}
+
+.video {position: absolute; top:1450px; left: 42px; width:320px; height:250px;}
 
 
 }
