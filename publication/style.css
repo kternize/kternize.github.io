@@ -2,16 +2,26 @@ html, body {
 	margin: 0;
 	padding: 0;
 	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 body {
 	width:80vw;
 	margin-left: 10vw;
-	background-image: url("paperbkg.png");
-	background-size: 100%;
-	background-attachment: fixed;
 	
+}
+
+.background-container {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("paperbkg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
 }
 
 h1 {font-family: 'Gilda Display', serif; color: #AB0000;}
