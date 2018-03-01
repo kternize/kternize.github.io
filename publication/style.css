@@ -2,32 +2,33 @@ html, body {
 	margin: 0;
 	padding: 0;
 	background-repeat: no-repeat;
-	background-size: cover; 
+	background-size: cover;
 }
 
 body {
 	width:80vw;
 	margin-left: 10vw;
 	background-image: url("paperbkg.png");
+	background-size: 100%;
+	background-attachment: fixed;
+	
 }
 
-h1 {font-family: 'Rosario', sans-serif; color: #AB0000; text-shadow: 1px 1px 4px #000;}
+h1 {font-family: 'Gilda Display', serif; color: #AB0000;}
 
-h2 {font-family: 'Rosario', sans-serif; color: #AB0000; text-shadow: 1px 1px 2px #000;}
+h2 {font-family: 'Gilda Display', serif; color: #AB0000;}
 
 .header1 {
-	font-family: 'Rosario', sans-serif; 
+	font-family: 'Gilda Display', serif;
 	color: #AB0000; 
-	text-shadow: 1px 1px 1px #000; 
 	font-size: 18px; 
 	padding-top: 12px;
 
 }
 
 .header2 {
-	font-family: 'Rosario', sans-serif; 
+	font-family: 'Gilda Display', serif;
 	color: #AB0000; 
-	text-shadow: 1px 1px 1px #000; 
 	font-size: 18px;
 	padding-top: 12px;
 }
@@ -50,43 +51,37 @@ img {
 }
 
 .pullquote {
-	font-family: 'Rosario', 
-	sans-serif; 
-	color: #FEDA0D;
-	font-size: 45px;
-	line-height: 56px;
-	text-indent: 20px;
+	font-family: 'Gilda Display', serif;
+	color: #AB0000;
+	font-size: 22px;
+	line-height: 36px;
+	text-indent: 10px;
 	padding-left: 10vw;
-	text-shadow: 1px 1px 5px #000;
-	text-align: justify-all;
 }
 
 .header3 {
-	font-family: 'Rosario', sans-serif; 
+	font-family: 'Gilda Display', serif;
 	color: #AB0000; 
-	text-shadow: 1px 1px 1px #000; 
 	font-size: 18px;
 	padding-top: 12px;
 }
 
 .header4 {
-	font-family: 'Rosario', sans-serif; 
+	font-family: 'Gilda Display', serif;
 	color: #AB0000; 
-	text-shadow: 1px 1px 1px #000; 
 	font-size: 18px;
 	padding-top: 12px;
 }
 
 a {
-	font-family: 'Rosario', sans-serif; 
+	font-family: 'Gilda Display', serif;
 	color: #AB0000; 
-	text-shadow: 1px 1px 2px #000; 
 	text-decoration: none;
 	padding-left: 52vw;
 }
 
 a:hover {
-	color: yellow; 
+	color: blue; 
 	text-decoration: none; 
 	transition: 1s;
 }
