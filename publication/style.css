@@ -351,7 +351,9 @@ a:hover {
 	-webkit-animation: fadein 3s;
 }
 
-#box4 {
+
+
+/*#box4 {
 	position: absolute;
 	width: 100vw;
 	height: 5vh;
@@ -404,4 +406,4 @@ a:hover {
 	z-index: -1;
 	top: 851.5vw;
 	left: 0vw;
-}
+}*/
