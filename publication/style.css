@@ -96,8 +96,10 @@ a {
 	color:#AB0000; 
 	text-decoration: none;
 	z-index: 1;
-	padding-left: 62vw;
+	padding-top: 10px;
 	padding-bottom: 10px;
+	font-size: 4vw;
+	padding-left: 60vw;
 }
 
 a:hover {
@@ -105,6 +107,10 @@ a:hover {
 	color: #fd39e6;
 	transition: 1.5s;
 	z-index: 1;
+}
+
+#secondpart{
+	padding-left: 60vw;
 }
 
 .slider {
@@ -133,13 +139,6 @@ a:hover {
 	animation:fade 15s infinite;
 	-webkit-animation:fade 15s infinite;
 }
-
-/*.slide2 {
-	background: url("cover2.jpg") no-repeat center;
-	background-size: cover;
-	animation:fade2 15s infinite;
-	-webkit-animation:fade2 15s infinite;
-}*/
 
 .slide3 {
 	background: url("cover3.jpg") no-repeat;
@@ -377,7 +376,7 @@ a:hover {
 	font-family: 'Rosario', 
 	sans-serif; 
 	color: #000000;
-	font-size: 2.7vw;
+	font-size: 2.9vw;
 	padding-bottom: 15px;
 	padding-top: 10px;
 	
