@@ -1,0 +1,294 @@
+body { 
+  margin: 0;
+  padding: 0;
+}
+
+.background-container {
+  height: 100vh;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-transition: 10s;
+  -webkit-animation-name: time-of-day;
+  -webkit-animation-iteration-count: infinite;
+
+}
+
+.circle1 {
+  position: absolute;
+  top: 52vh;
+  left: 8vw;
+  display: block;
+  background: radial-gradient(circle at 50% 120%, #FF4B9B, #A30A3C 10%, #FA0F5C 80%, #FFBAB8 100%);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  z-index: 3
+  -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 60s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 60s;
+    -webkit-animation-name: growcircle;
+    -webkit-animation-duration: 60s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: growcircle;
+    -moz-animation-duration: 60s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+    transition-property: -moz-transform;
+    transition-duration: 60s;
+    animation-name: growcircle;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.circle2 {
+  position: absolute;
+  top: 52vh;
+  left: 42vw;
+  display: block;
+  background: radial-gradient(circle at 50% 120%, #FF4B9B, #A30A3C 10%, #FA0F5C 80%, #FFBAB8 100%);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  z-index: 1;
+  animation-name: changecolor;
+  -webkit-animation:changecolor infinite;
+  animation-duration: 6s;
+}
+
+
+.circle3 {
+  position: absolute;
+  top: 55vh;
+  left: 75vw;
+  display: block;
+  margin: 0;
+  z-index: 1
+  background: radial-gradient(circle at 50% 120%, #FF4B9B, #A30A3C 10%, #FA0F5C 80%, #FFBAB8 100%);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.stage1 {
+  position: absolute;
+  top: -13vh;
+  left: -5vw;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 20px;
+  perspective: 1200px;
+  perspective-origin: 50% 50%;
+}
+
+.stage2 {
+  position: absolute;
+  top: 38vh;
+  left: 37vw;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 20px;
+  perspective: 1200px;
+  perspective-origin: 50% 50%;
+}
+
+.ball .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50% 50%, #828282 0%, transparent 100%);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+}
+
+
+/*.hour {
+  background-size: contain;
+  background-position: center center;  
+  background-repeat: no-repeat;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+.minute {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;  
+  margin-bottom: 20px;
+  background-size: contain;
+  background-position: center center;  
+  background-repeat: no-repeat;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;  
+}
+
+.second {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation-name: circle3;
+  animation-duration: .6s;
+  animation-iteration-count: infinite;
+}*/
+
+.ball3 {
+  background: radial-gradient(circle at 50% 120%, #FF4B9B, #A30A3C 10%, #FA0F5C 80%, #FFBAB8 100%);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.ball-shadow3 {
+  background: radial-gradient(50% 50%, #828282 0%, transparent 100%);
+  height: 50px;
+  width: 200px;
+}
+
+.bounce {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+}
+
+.bounce .ball-shadow3 {
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: .6s;
+  -webkit-animation-name: grow;
+  -webkit-animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: .6s;
+  animation-name: grow;
+  animation-iteration-count: infinite;
+  bottom: 0;
+  position: absolute;
+  margin-left: -100px;
+}
+
+.bounce .ball3 {
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: .1s;
+  -webkit-animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: .1s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  margin-left: -100px;
+  position: absolute;
+}
+
+@-webkit-keyframes grow {
+  from {
+    bottom: 0;
+    margin-left: -100px;
+    height: 50px;
+    opacity: 1;
+    width: 200px;
+  }
+
+  to {
+    bottom: -15px;
+    margin-left: -150px;
+    height: 80px;
+    opacity: 0.4;
+    width: 300px;
+  }
+}
+
+@keyframes grow {
+  from {
+    bottom: 0;
+    margin-left: -100px;
+    height: 50px;
+    width: 200px;
+  }
+
+  to {
+    bottom: 20px;
+    margin-left: 0;
+    height: 10px;
+    width: 15px;
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    bottom: 20px;
+  }
+
+  to {
+    bottom: 100%;
+  }
+}
+
+@keyframes bounce {
+  from {
+    bottom: 20px;
+  }
+
+  to {
+    bottom: 100%;
+  }
+}
+
+@keyframes time-of-day
+
+{
+
+  0% {background: linear-gradient(#BDFFF5, #F2FFA9);}
+  25% {background: linear-gradient(#55E8DE, #F2FF58); }
+  75% {background: linear-gradient(#FF5F19, yellow); }
+  100% {background: linear-gradient(#0A0517, #250826); }
+}
+
+    @-webkit-keyframes changecolor
+{
+
+0%   { background: radial-gradient(circle at 50% 120%, #FF4B9B, #A30A3C 10%, #FA0F5C 80%, #FFBAB8 100%);}
+10%  { background: radial-gradient(circle at 50% 120%, #00CDD6, #005AEB 10%, #00FFEB 80%, #9DF3FE 100%);}
+20%  { background: radial-gradient(circle at 50% 120%, #04BD1D, #04E31D 10%, #9DFF1D 80%, #F1FF1D 100%);}
+30%  { background: radial-gradient(circle at 50% 120%, #940805, #710805 10%, #E91A00 80%, #FF0F09 100%);}
+40%  { background: radial-gradient(circle at 50% 120%, #1523FF, #1523A8 10%, #0A1152 80%, #1EA4FF 100%);}
+50%  { background: radial-gradient(circle at 50% 120%, #520CC2, #44098C 10%, #720FEB 80%, #9E4CD6 100%);}
+60%  { background: radial-gradient(circle at 50% 120%, #FFD417, #FFE400 10%, #EBB110 80%, #FFE472 100%);}
+70%  { background: radial-gradient(circle at 50% 120%, #DFF0E3, #BBC9BF 10%, #79827B 80%, #9CA89F 100%);}
+80%  { background: radial-gradient(circle at 50% 120%, #4A5F69, #6E8E9C 10%, #8DB5C7 80%, #B1E4FA 100%);}
+90%  { background: radial-gradient(circle at 50% 120%, #7AC7B0, #5E9987 10%, #77C2AB 80%, #9CFFE1 100%);}
+100%  { background: radial-gradient(circle at 50% 120%, #402132, #944D74 10%, #C7689B 80%, #FF85C7 100%);}
+
+}
+
+@-webkit-keyframes growcircle {
+    from {
+        -webkit-transform:scale(.2);
+    }
+    to {
+        -webkit-transform:scale(1);
+    }
+}
+@-moz-keyframes growcircle {
+    from {
+        -moz-transform:scale(.2);
+    }
+    to {
+        -moz-transform:scale(1);
+    }
+}
+@keyframes growcircle {
+    from {
+        transform:scale(.2);
+    }
+    to {
+        transform:scale(1);
+    }
+}
+  
