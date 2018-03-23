@@ -9,15 +9,15 @@ body {
 	position: fixed;
 	width: 100vw;
 	height: 16vh;
-	background: linear-gradient(#00a2df, #007db5);
-	z-index: 2;
+	background: linear-gradient(#B0F0D9, #0BD4BF);
+	z-index: 4;
 }
 
 .Logo {
 	position: fixed;
 	top: 4vh;
 	left: 9vw;
-	z-index: 2;
+	z-index: 4;
 	width: 10vw;
 	height: 16vh;
 }
@@ -28,9 +28,10 @@ body {
 	left: 28vw;
 	font-family: Avenir;
 	font-size: 1.3vw;
-	z-index: 3;
+	z-index: 4;
 	color: #ffffff;
 	letter-spacing: 3px;
+	cursor: pointer;
 	
 
 }
@@ -41,9 +42,11 @@ body {
 	left: 36vw;
 	font-family: Avenir;
 	font-size: 1.3vw;
-	z-index: 3;
+	z-index: 4;
 	color: #ffffff;
 	letter-spacing: 3px;
+	cursor: pointer;
+	
 	
 
 }
@@ -54,9 +57,11 @@ body {
 	left: 43.5vw;
 	font-family: Avenir;
 	font-size: 1.3vw;
-	z-index: 3;
+	z-index: 4;
 	color: #ffffff;
 	letter-spacing: 3px;
+	cursor: pointer;
+	
 	
 
 }
@@ -68,9 +73,11 @@ body {
 	left: 54vw;
 	font-family: Avenir;
 	font-size: 1.3vw;
-	z-index: 3;
+	z-index: 4;
 	color: #ffffff;
 	letter-spacing: 3px;
+	cursor: pointer;
+	
 	
 }
 
@@ -80,11 +87,23 @@ body {
 	left: 65.5vw;
 	font-family: Avenir;
 	font-size: 1.3vw;
-	z-index: 3;
+	z-index: 4;
 	color: #ffffff;
 	letter-spacing: 3px;
+	cursor: pointer;
+	
 	
 }
+
+.mySlides {
+	display: none;
+	top: 45vh;
+	left: 3vw;
+	position: absolute;
+	animation-iteration-count: infinite;
+
+}
+
 
 * {
 	font-family: Avenir;
@@ -105,20 +124,20 @@ body {
 	margin: 0 50px 10px 0;
 	vertical-align: top;
 	float: left;
-	z-index: 3;
+	z-index: 4;
 	text-align: center;
 }
 
 .languagepicker:hover {
 	/* don't forget the 1px border */
 	height: 81px;
-	z-index: 3;
+	z-index: 4;
 }
 
 .languagepicker a{
 	color: #000;
 	text-decoration: none;
-	z-index: 3;
+	z-index: 4;
 }
 
 .languagepicker li {
@@ -126,23 +145,23 @@ body {
 	padding: 0px 20px;
 	line-height: 40px;
 	border-top: 1px solid #EEE;
-	z-index: 3;
+	z-index: 4;
 }
 
 .languagepicker li:hover{
 	background-color: #EEE;
-	z-index: 3;
+	z-index: 4;
 }
 
 .languagepicker a:first-child li {
 	border: none;
 	background: #FFF !important;
-	z-index: 3;
+	z-index: 4;
 }
 
 .languagepicker li img {
 	margin-right: 5px;
-	z-index: 3;
+	z-index: 4;
 }
 
 .roundborders {
@@ -155,8 +174,8 @@ body {
 	The first language is 40px heigh, 
 	the others are 41px
 	*/
-	height: 245px;
-	z-index: 3;
+	height: 165px;
+	z-index: 4;
 }
 .shape2 {
 	position: absolute;
@@ -166,41 +185,6 @@ body {
 	overflow: hidden;
 }
 
-.slider {
-	position: absolute;
-	z-index: 1;
-	top: 42vh;
-	left: 4vw;
-}
-
-.quote1,.quote2,.quote3,.quote4{
-	position: absolute;
-
-}
-
-.quote1 {
-	animation:fade 24s infinite;
-	-webkit-animation:fade 24s infinite;
-	z-index: 1;
-}
-
-.quote2 {
-	animation:fade2 24s infinite;
-	-webkit-animation:fade2 24s infinite;
-	z-index: 1;
-}
-
-.quote3 {
-	animation:fade3 24s infinite;
-	-webkit-animation:fade3 24s infinite;
-	z-index: 1;
-}
-
-.quote4 {
-	animation:fade4 24s infinite;
-	-webkit-animation:fade4 24s infinite;
-	z-index: 1;
-}
 
 .photo1 {
 	position: absolute;
@@ -209,6 +193,7 @@ body {
 	left: 51vw;
 	top: 12vh;
 	overflow: hidden;
+	z-index: 1;
 
 }
 
@@ -218,6 +203,7 @@ body {
 	top: 89vh;
 	max-width: 100vw;
 	max-height: 60vh;
+	z-index: 1;
 	
 }
 
@@ -225,7 +211,7 @@ body {
 	position: absolute;
 	top: 145vh;
 	left: 11vw;
-	z-index: 1;
+	z-index: 2;
 
 }
 
@@ -235,12 +221,254 @@ body {
 	left: 45vw;
 }
 
+
+.w3-container {
+	top: 220vh;
+	left: 3.5vw; 
+	position: absolute;
+}
+
+.w3-button {
+	border-radius: 5vw;
+	width: 40vw;
+	height: 8vh;
+	background: linear-gradient(#3EDDF7, #31AFC4);
+	cursor: pointer;
+}
+
+/*.w3-text {
+	font-size: 1.4vw;
+	color: #ffffff;
+	font-family: Avenir;
+	cursor: pointer;
+
+}*/
+
+#id01.w3-modal {
+	z-index: 2;
+	width: 80vw;
+	height: 70vh;
+	left: 10vw;
+	top: 10vh;
+	position: fixed;
+	overflow: hidden;
+}
+
+.w3-container2 {
+	top: 5vh;
+	left: 3.5vw; 
+	position: absolute;
+}
+
+.w3-button2 {
+	width: 70.5vw;
+	height: 43vh;
+	background: linear-gradient(#3EDDF7, #31AFC4);
+}
+
+.w3-display-topright {
+	top: .5vh;
+	position: fixed;
+	font-size: 2.2vw;
+	cursor: pointer;
+
+}
+.w3-container3 {
+	font-size: 1.35vw;
+	font-family: Avenir;
+
+}
+
+.p1 {
+	top: 7vh;
+	left: 9vw; 
+	position: absolute;
+}
+
+.p2 {
+	top: 7vh;
+	left: 40vw; 
+	position: absolute;
+}
+
+
+.w3-container4 {
+	top: 240vh;
+	left: 4.5vw; 
+	position: absolute;
+}
+
+.w3-button3 {
+	border-radius: 5vw;
+	width: 40vw;
+	height: 8vh;
+	background: linear-gradient(#3EDDF7, #31AFC4);
+	cursor: pointer;
+}
+
+
+#id02.w3-modal {
+	z-index: 2;
+	width: 80vw;
+	height: 70vh;
+	left: 10vw;
+	top: 10vh;
+	position: fixed;
+	overflow: hidden;
+}
+
+.w3-container5 {
+	top: 5vh;
+	left: 3.5vw; 
+	position: absolute;
+}
+
+.w3-button4 {
+	width: 70.5vw;
+	height: 43vh;
+	background: linear-gradient(#3EDDF7, #31AFC4);
+}
+
+
+.w3-container6 {
+	font-size: 1.35vw;
+	font-family: Avenir;
+
+}
+
+.p3 {
+	top: 7vh;
+	left: 6vw; 
+	position: absolute;
+}
+
+.p4 {
+	top: 7vh;
+	left: 38vw; 
+	position: absolute;
+}
+
+
+
+
+
+.w3-container7 {
+	top: 260vh;
+	left: 4.5vw; 
+	position: absolute;
+}
+
+.w3-button5 {
+	border-radius: 5vw;
+	width: 40vw;
+	height: 8vh;
+	background: linear-gradient(#3EDDF7, #31AFC4);
+	cursor: pointer;
+}
+
+
+#id03.w3-modal {
+	z-index: 2;
+	width: 80vw;
+	height: 70vh;
+	left: 10vw;
+	top: 10vh;
+	position: fixed;
+	overflow: hidden;
+}
+
+.w3-container8 {
+	top: 5vh;
+	left: 3.5vw; 
+	position: absolute;
+}
+
+.w3-button6 {
+	width: 70.5vw;
+	height: 43vh;
+	background: linear-gradient(#3EDDF7, #31AFC4);
+}
+
+
+.w3-container9 {
+	font-size: 1.35vw;
+	font-family: Avenir;
+
+}
+
+.p5 {
+	top: 7vh;
+	left: 6vw; 
+	position: absolute;
+}
+
+.p6 {
+	top: 7vh;
+	left: 38vw; 
+	position: absolute;
+}
+
+.w3-container10 {
+	top: 280vh;
+	left: 4.5vw; 
+	position: absolute;
+}
+
+.w3-button7 {
+	border-radius: 5vw;
+	width: 40vw;
+	height: 8vh;
+	background: linear-gradient(#3EDDF7, #31AFC4);
+	cursor: pointer;
+}
+
+#id04.w3-modal {
+	z-index: 2;
+	width: 80vw;
+	height: 70vh;
+	left: 10vw;
+	top: 10vh;
+	position: fixed;
+	overflow: hidden;
+}
+
+.w3-container11 {
+	top: 5vh;
+	left: 3.5vw; 
+	position: absolute;
+}
+
+.w3-button8 {
+	width: 70.5vw;
+	height: 43vh;
+	background: linear-gradient(#3EDDF7, #31AFC4);
+}
+
+.w3-container12 {
+	font-size: 1.35vw;
+	font-family: Avenir;
+
+}
+
+.p7 {
+	top: 7vh;
+	left: 9vw; 
+	position: absolute;
+}
+
+.p8 {
+	top: 7vh;
+	left: 41vw; 
+	position: absolute;
+}
+
 .photo3 {
 	position: absolute;
 	left: -2vw;
 	top: 298vh;
 	max-width: 100vw;
 	max-height: 60vh;
+	z-index: 1;
 	
 }
 
@@ -248,7 +476,7 @@ body {
 	position: absolute;
 	top: 343vh;
 	left: 11vw;
-	z-index: 1;
+	z-index: 2;
 }
 
 .fakevideo {
@@ -264,13 +492,14 @@ body {
 	top: 515vh;
 	max-width: 100vw;
 	max-height: 60vh;
+	z-index: 1;
 }
 
 .header3 {
 	position: absolute;
 	top: 565vh;
 	left: 11vw;
-	z-index: 1;
+	z-index: 2;
 }
 
 .shape4 {
@@ -281,7 +510,7 @@ body {
 .info1{
 	font-size: 1.5vw;
 	font-family: Avenir;
-	text-align: center;
+	text-align: left;
 	color: #ffffff;
 	top: 665vh;
 	left: 5.5vw;
@@ -293,8 +522,8 @@ body {
 .info2{
 	font-size: 1.5vw;
 	font-family: Avenir;
-	text-align: center;
-	color: #000000;
+	text-align: left;
+	color: #8F9096;
 	top: 665vh;
 	left: 40vw;
 	position: absolute;
@@ -305,8 +534,8 @@ body {
 .info3{
 	font-size: 1.5vw;
 	font-family: Avenir;
-	text-align: center;
-	color: #000000;
+	text-align: left;
+	color: #8F9096;
 	top: 665vh;
 	left: 73vw;
 	position: absolute;
@@ -320,13 +549,14 @@ body {
 	top: 710vh;
 	max-width: 100vw;
 	max-height: 60vh;
+	z-index: 1;
 }
 
 .header4 {
 	position: absolute;
 	top: 763vh;
 	left: 11vw;
-	z-index: 1;
+	z-index: 2;
 }
 .shape5 {
 	position: absolute;
@@ -376,27 +606,43 @@ body {
 
 
 .rule1 {
+	width: 20.5vw;
+	height: 1vh;
+	background: linear-gradient(#B0F0D9, #0BD4BF);
+	z-index: 4;
 	position: absolute;
-	left: -5.1vw;
-	top: 643vh;
+	top: 662.5vh;
+	left: 5.5vw;
 }
 
 .rule2 {
+	width: 19vw;
+	height: 1vh;
+	background: linear-gradient(#B0F0D9, #0BD4BF);
+	z-index: 4;
 	position: absolute;
-	left: 35.5vw;
-	top: 588.5vh;
+	top: 662.5vh;
+	left: 40vw;
 }
 
 .rule3 {
+	width: 20vw;
+	height: 1vh;
+	background: linear-gradient(#B0F0D9, #0BD4BF);
+	z-index: 4;
 	position: absolute;
-	left: 69vw;
-	top: 635.5vh;
+	top: 662.5vh;
+	left: 73vw;
 }
 
 .rule4 {
+	width: 39vw;
+	height: 1vh;
+	background: linear-gradient(#B0F0D9, #0BD4BF);
+	z-index: 4;
 	position: absolute;
-	left: 4.5vw;
-	top: 795vh;
+	top: 845.5vh;
+	left: 7vw;
 }
 
 .bar1 {
@@ -432,7 +678,7 @@ body {
 
  a {
 	text-decoration: none;
-	color: blue;
+	color: #8134AD;
 	z-index: 3;
 
 }
@@ -444,3 +690,19 @@ a:hover {
 	z-index: 3;
 
 }
+
+.logo2{
+
+	top: 853vh;
+	left: 78vw;
+	position: absolute;
+}
+
+.logoquote {
+	font-size: 1.4vw;
+	font-family: Avenir;
+	top: 898vh;
+	left: 76.5vw;
+	position: absolute;
+}
+

@@ -4,31 +4,24 @@
 <title>Feel Like Humans</title>
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1 shrink to fit=no">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
-<script src="jquery.localscroll.js" type="text/javascript"></script> 
-<script src="jquery.scrollTo.js" type="text/javascript"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
 </head>
 <body>
 	<div class="shape1"></div>
 	<div class="Logo"><img src="Logo.svg"></div>
-	<div id="HOME">HOME</div>
+	<!-- <a href="#homelink"> --><div id="HOME">HOME</div><!--</a>-->
 	<div id="INFO">INFO</div>
 	<div id="STORIES">STORIES</div>
 	<div id="GETHELP">GET HELP</div>
 	<div id="OURMISSION">OUR MISSION</div>
 
-	<div class='slider'>
-		<div class='quote1'><img src="quote1.png"></div>
-		<div class='quote2'><img src="quote2.png"></div>
-		<div class='quote3'><img src="quote3.png"></div>
-		<div class='quote4'><img src="quote4.png"></div>
-	</div>
 
 	<div class="shape2"><img src="shape2.png"></div> 
-	<div class="photo1"><img src="photo1.png"></div>
+	<div id="homelink" class="photo1"><img src="photo1.png"></div>
 	<div class="photo2"><img src="photo2.png"></div>
-	<div class="header1"><img src="header1.png"></div>
+	<div id="infolink" class="header1"><img src="header1.png"></div>
 	<div class="shape3"><img src="shape3.png"></div>
 	<div class="photo3"><img src="photo3.png"></div>
 	<div class="header2"><img src="header2.png"></div>
@@ -40,15 +33,14 @@
 	<div class="header4"><img src="header4.png"></div>
 	<div class="shape5"><img src="shape5.png"></div>
 
-	<div class="info1">Can’t find a health center? <br>Go to <br><strong>
+	<div class="info1">Can’t find a health center? Go <br>to <strong>
     <a href="https://www.ﬁndahealthcenter.hrsa.gov">ﬁndahealthcenter.hrsa.gov</a></strong><br>to find a health center closest<br>to you.</div>
 
-<div class="info2">Want to find out about after <br>school programs? <br>
+<div class="info2">Want to find out about after <br>school programs?
 Check out <br><strong><a href="https://www1.nyc.gov/site/dycd/services/after-school.page">www1.nyc.gov/site/dycd/<br>services/after-school.page</a></strong><br> to learn more.</div>
 
 <div class="info3">Want to check out some <br>community events near you? <br>Go to 
-<br><strong><a href="https://www.eventbrite.com/d/ny--new-york/events/">www.eventbrite.com/d/<br>ny--new-york/events/</a></strong>
-<br>to find out more about events.</div>
+<strong><a href="https://www.eventbrite.com/d/ny--new-york/events/">www.eventbrite.com/<br>d/ny--new-york/events/</a></strong> to <br>find out more about events.</div>
 
 <div class="lastp">
 	<p>FEEL LIKE HUMANS is an organzation whose primary goal <br>is to help new immigrants, whether they are documented <br>or not, adjust to their new environments and allow them <br>to be aware that they have a safe place for them to <br>express the emotions they may be struggling to cope with.</p>
@@ -61,21 +53,166 @@ Check out <br><strong><a href="https://www1.nyc.gov/site/dycd/services/after-sch
 <ul class="languagepicker roundborders large">
 	<a href="#en"><li>English</li></a>
     <a href="#es"><li>Español</li></a>
-	<a href="#de"><li>German</li></a>
 	<a href="#fr"><li>Français</li></a>
-	<a href="#it"><li>Italiano</li></a>
 	<a href="#ch"><li>Chinese</li></a>
 </ul>
 
-<div class="rule1"><img src="rule1.png"></div>
-<div class="rule2"><img src="rule2.png"></div>
-<div class="rule3"><img src="rule3.png"></div>
-<div class="rule4"><img src="rule4.png"></div>
+
+<div class="rule1"></div>
+<div class="rule2"></div>
+<div class="rule3"></div>
+<div class="rule4"></div>
 
 <div class="bar1"><img src="bar1.png"></div>
 <div class="bar2"><img src="bar2.png"></div>
 <div class="bar3"><img src="bar3.png"></div>
 <div class="bar4"><img src="bar4.png"></div>
+
+<div class="quotes" style="max-width:600px">
+  <div class="mySlides"></div>
+
+  <img class="mySlides" src="quote1.png" style="width:46%">
+  <img class="mySlides" src="quote2.png" style="width:46%">
+  <img class="mySlides" src="quote3.png" style="width:46%">
+  <img class="mySlides" src="quote4.png" style="width:46%">
+</div>
+
+<div class="w3-container">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <button onclick="document.getElementById('id01').style.display='block'
+  " class="w3-button w3-black">Are you a new immigrant who’s feeling blue or lost? If so...</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container2"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class= "w3-display-topright">&times;</span>
+      </header>
+      <div class="w3-button2"></div>
+      <div class="w3-container3">
+      	<div class="p1">NYC Well has staff trained in mental health <br>professionals that can help match callers to <br>the most appropriate mental health and <br>substance abuse services that fit their <br>needs. NYC Well is not only FREE but also <br>CONFIDENTIAL 24/7 via phone, text, and <br>internet chat. NYC Well is also multilingual <br>and multicultural. </div>
+
+      	<div class="p2">Call 1-888-NYC-WELL (1-888-692-9355), <br>711 (TTY for hearing impaired)
+	You can <br>also text WELL to 65173 or visit NYC <br>Well online at nycwell.cityofnewyork.us
+	</div>
+	</div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container4"> 
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <button onclick="document.getElementById('id02').style.display='block'
+  " class="w3-button3 w3-black">Are you a migrant who is seeking counseling? If so...</button>
+
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container5"> 
+        <span onclick="document.getElementById('id02').style.display='none'" 
+        class= "w3-display-topright">&times;</span>
+      </header>
+      <div class="w3-button4"></div>
+      <div class="w3-container6">
+      	<div class="p3">Churches can offer a safe environment for you <br>and many others. Have faith; 
+      		life groups for <br>example, can also help you to understand <br>your emotions better and overcome some <br>daily challenges you might be facing.
+
+			<p><strong>Here are some churches you may want <br>to visit:</strong></p>
+		</div>
+
+      	<div class="p4">
+				• Queens: Highland Church
+
+			<br>• Manhattan: Sion-St. Peter’s
+
+			<br>• Bronx: CityLight Church
+
+			<br>• Brooklyn: St. Paul 
+  			  Community Baptist Church
+ 
+			<br>• Staten Island: Faith 
+  			  Community Church
+
+  			  <br>Visit localchurches.org to find a church near you
+	</div>
+	</div>
+
+    </div>
+  </div>
+</div>
+
+ <div class="w3-container7">  
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <button onclick="document.getElementById('id03').style.display='block'
+  " class="w3-button5 w3-black">Are you a migrant who wants to feel apart of your community? If so...</button>
+
+  <div id="id03" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container8"> 
+        <span onclick="document.getElementById('id03').style.display='none'" 
+        class= "w3-display-topright">&times;</span>
+      </header>
+      <div class="w3-button6"></div>
+      <div class="w3-container9">
+      	<div class="p3">Why not volunteer? Help out your community, <br>and make new connections! Whether it’s <br>participating in a food pantry or planting a <br>tree, it’s great to be apart of change, meet <br>new people, and relive stress! No skills are <br>needed, and there are opportunities for those <br>who don’t speak english. 
+		</div>
+
+      	<div class="p4">Contact New York Cares at (212) 228-5000 <br>or go to newyorcares.org to find out where <br>you can volunteer.
+	</div>
+	</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="w3-container10">   
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <button onclick="document.getElementById('id04').style.display='block'
+  " class="w3-button7 w3-black">Are you an immigrant who's not sure where to go when <br>you or your child
+  are sick? If so...</button>
+
+  <div id="id04" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container11"> 
+        <span onclick="document.getElementById('id04').style.display='none'" 
+        class= "w3-display-topright">&times;</span>
+      </header>
+      <div class="w3-button8"></div>
+      <div class="w3-container12">
+      	<div class="p7">Did you know there are health clinics that <br>provide confidential and safe services <br>regardless of your immigration status? 
+
+      	<p><strong>Try and visit some of these locations:</strong></p>
+
+      	 1.) Plaza del Sol Family
+     Health Center<br>
+
+     3716 108th St.
+     Corona NY 11368<br>
+		</div>
+
+      	<div class="p8">
+
+2.)  Elmhurst Hospital Center
+
+     79-01 <br>Boradway
+     Elmhurst, NY 11373<br>
+
+<p>3.)  Academy of Medical and 
+     Public <br>Health Services
+     
+     53-06 3rd Ave
+     <br>Brooklyn, NY 11220</p>
+	</div>
+	</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="logo2"><img src="logo2.png"></div>
+<div class="logoquote"><em>"Let's get through it together."</em></div>
+
 
 </body>
 
