@@ -14,7 +14,7 @@ body {
 
 .circle1 {
   position: absolute;
-  top: 52vh;
+  bottom: 17.8vh;
   left: 8vw;
   display: block;
   background: radial-gradient(circle at 50% 120%, #FF4B9B, #A30A3C 10%, #FA0F5C 80%, #FFBAB8 100%);
@@ -57,11 +57,11 @@ body {
   z-index: 1;
   animation-name: changecolor;
   -webkit-animation:changecolor infinite;
-  animation-duration: 6s;
+  animation-duration: 60s;
 }
 
 
-.circle3 {
+#circle3 {
   position: absolute;
   top: 55vh;
   left: 75vw;
@@ -98,6 +98,35 @@ body {
   perspective-origin: 50% 50%;
 }
 
+#circle4 {
+  position: absolute;
+  top: 52vh;
+  left: 75vw;
+  display: block;
+  background: radial-gradient(circle at 50% 120%, #FF4B9B, #A30A3C 10%, #FA0F5C 80%, #FFBAB8 100%);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  z-index: 1;
+  animation-name: changecolor;
+  -webkit-animation:changecolor infinite;
+  animation-duration: .06s;
+}
+
+#stage4 {
+  position: absolute;
+  top: 38vh;
+  left: 70vw;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 20px;
+  perspective: 1200px;
+  perspective-origin: 50% 50%;
+}
+
+
 .ball .shadow {
   position: absolute;
   width: 100%;
@@ -106,39 +135,6 @@ body {
   transform: rotateX(90deg) translateZ(-150px);
   z-index: -1;
 }
-
-
-/*.hour {
-  background-size: contain;
-  background-position: center center;  
-  background-repeat: no-repeat;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-}
-
-.minute {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;  
-  margin-bottom: 20px;
-  background-size: contain;
-  background-position: center center;  
-  background-repeat: no-repeat;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;  
-}
-
-.second {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  animation-name: circle3;
-  animation-duration: .6s;
-  animation-iteration-count: infinite;
-}*/
 
 .ball3 {
   background: radial-gradient(circle at 50% 120%, #FF4B9B, #A30A3C 10%, #FA0F5C 80%, #FFBAB8 100%);
@@ -161,11 +157,11 @@ body {
 
 .bounce .ball-shadow3 {
   -webkit-animation-direction: alternate;
-  -webkit-animation-duration: .6s;
+  -webkit-animation-duration: .5s;
   -webkit-animation-name: grow;
   -webkit-animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-duration: .6s;
+  animation-duration: .5s;
   animation-name: grow;
   animation-iteration-count: infinite;
   bottom: 0;
@@ -175,11 +171,11 @@ body {
 
 .bounce .ball3 {
   -webkit-animation-direction: alternate;
-  -webkit-animation-duration: .1s;
+  -webkit-animation-duration: .5s;
   -webkit-animation-name: bounce;
   -webkit-animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-duration: .1s;
+  animation-duration: .5s;
   animation-name: bounce;
   animation-iteration-count: infinite;
   margin-left: -100px;
@@ -269,26 +265,131 @@ body {
 
 @-webkit-keyframes growcircle {
     from {
-        -webkit-transform:scale(.2);
+        -webkit-transform:scale(.2); transform-origin: 50% 100%;
     }
     to {
-        -webkit-transform:scale(1);
+        -webkit-transform:scale(1); transform-origin: 50% 100%;
     }
 }
 @-moz-keyframes growcircle {
     from {
-        -moz-transform:scale(.2);
+        -moz-transform:scale(.2); transform-origin: 50% 100%;
     }
     to {
-        -moz-transform:scale(1);
+        -moz-transform:scale(1); transform-origin: 50% 100%;
     }
 }
 @keyframes growcircle {
     from {
-        transform:scale(.2);
+        transform:scale(.2); transform-origin: 50% 100%;
     }
     to {
-        transform:scale(1);
+        transform:scale(1);transform-origin: 50% 100%;
     }
 }
   
+.wake-up-text {
+  position: absolute;
+  top: 7vh;
+  left: 46.5vw;
+  color: #ffffff;
+  font-family: Avenir;
+  font-weight: bolder;
+  z-index: 1;
+  display: none;
+}
+
+.alarming {
+  animation-name: big, textcolor;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  z-index: 1;
+  display: block !important;
+}
+
+.alarming2 {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  z-index: 1;
+  display: block !important;
+}
+
+.button {
+  position: absolute;
+  top: 20vh;
+  left: 42vw;
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer; 
+  background: linear-gradient(#fdb728, #f78d2d);
+  z-index: 1;
+  display: none;
+}
+.snooze{
+  position: absolute;
+  top: 21.2vh;
+  left: 44.3vw;
+  font-size: 2vw;
+  color: #ffffff;
+  font-family: Avenir;
+  font-weight: bolder;
+  z-index: 2;
+  letter-spacing: .5vw;
+  cursor: pointer; 
+  display: none;
+
+}
+
+.alarming3 {
+  position: absolute;
+  top: 52vh;
+  left: 42vw;
+  display: block;
+  background: radial-gradient(circle at 50% 120%, #FF4B9B, #A30A3C 10%, #FA0F5C 80%, #FFBAB8 100%);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  z-index: 1;
+  animation-name: changecolor;
+  -webkit-animation:changecolor infinite;
+  animation-duration: .06s;
+}
+
+.alarming4 {
+  animation-name: changecolor;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  z-index: 1;
+  display: block !important;
+}
+
+
+    @-webkit-keyframes textcolor
+{
+
+0%   { color: #FF4B9B;}
+10%  { color: #00CDD6;}
+20%  { color: #9DFF1D;}
+30%  { color: #710805;}
+40%  { color: #1523FF;}
+50%  { color: #520CC2;}
+60%  { color: #FFE400;}
+70%  { color: #DFF0E3;}
+80%  { color: #4A5F69;}
+90%  { color: #7AC7B0;}
+100%  { color: #944D74;}
+
+}
+
+
+@keyframes big {
+
+   from {
+        transform: scale(.2);
+    }
+    to {
+        transform: scale(5);
+    }
+}
